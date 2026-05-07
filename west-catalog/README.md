@@ -42,8 +42,36 @@ To obtain permission for individuals at your institution to publish to a project
 
 When your institution has been granted permission to publish to the project’s collection…
 1. Configure publisher for the ESGF staging environment.
-  * West Staging/testing: (STAC API URL, Metagrid URL)
+  * West Staging/testing: (STAC API URLs)
+    - Add the following to your `esg.yaml` config file for test publishing:
+```
+stac_config:
+  stac_client:
+    client_id:  
+    redirect_uri: 
+  token_storage_file: ~/.esgf-publisher.json 
+  stac_transaction_api:
+    client_id: 
+    access_control_policy: https://esgf2.s3.amazonaws.com/access_control_policy.json
+    scope_string:  
+    base_url: 
+  stac_api: 
+```
 2. Publish a test dataset and confirm that it appears properly in the staging environment. If not, consult ______ for assistance.
 3. Configure publisher for the ESGF production environment.
-  * West Production: (STAC API URL, Metagrid URL)
+  * West Production: (STAC API URLs)
+    - Add the following to your `esg.yaml` config file for production publishing:
+```
+stac_config:
+  stac_client:
+    client_id:  
+    redirect_uri: 
+  token_storage_file: ~/.esgf-publisher.json 
+  stac_transaction_api:
+    client_id: 
+    access_control_policy: https://esgf2.s3.amazonaws.com/access_control_policy.json
+    scope_string:  
+    base_url: 
+  stac_api: 
+``` 
 4. Now, you can run the ESGF Publisher application to publish datasets to the ESGF project.
