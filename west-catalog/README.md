@@ -19,7 +19,7 @@ Before proceeding, confirm that there’s a collection in the ESGF STAC catalog 
 
 * Look for your project’s collection here: 
   * [West STAC API](https://discovery.west.esgf.io)
-  * [Metagrid](https://metagrid.esgf.io)
+  * [Metagrid](https://metagrid.esgf-west.org)
 
 ***If the project your institution needs to contribute to already has a collection in the ESGF STAC catalog, skip to the next section.***
 
