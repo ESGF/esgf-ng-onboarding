@@ -14,16 +14,16 @@ The following requirements must be met in order for individuals at your institut
 2. Your institution’s ESGF team must have an *ESGF Globus group* and you must add authorized individuals to your team’s group.
 3. The ESGF West operations team must *authorize* your team’s group to publish to the ESGF project’s collection.
 
-## Register an ESGF Project
+## ESGF Project Confirmation
 Before proceeding, confirm that there’s a collection in the ESGF STAC catalog for the project to which you’re contributing.
 
 * Look for your project’s collection here: [West STAC API URL; Metagrid URL]
 
 ***If the project your institution needs to contribute to already has a collection in the ESGF STAC catalog, skip to the next section.***
 
-Before you can publish to a new ESGF project, you must first register the project’s schema with the esgf-vocab project. When esgf-vocab is populated with your project schema, the project’s collection should appear automatically in the ESGF STAC catalogs.
-
-After you’ve worked with the esgf-vocab team to add your project’s schema to esgf-vocab, watch the collection endpoint (see links above) for your collection to appear. If it doesn’t appear automatically within two business days, email _______ for assistance.
+If your project is not present:
+  - If you are coordinating with the WCRP, please reach out to the WIP (infrastructure panel) co-chairs (link at IPO site).
+  - If this project is not affiliated with WCRP research, please reach out to the ESGF-XC via _______ .
 
 ## Register an Institution
 ***If your institution has published to ESGF-NG before (presumably with a different ESGF project), skip to the next section.***
@@ -42,8 +42,36 @@ To obtain permission for individuals at your institution to publish to a project
 
 When your institution has been granted permission to publish to the project’s collection…
 1. Configure publisher for the ESGF staging environment.
-  * West Staging/testing: (STAC API URL, Metagrid URL)
+  * West Staging/testing: (STAC API URLs)
+    - Add the following to your `esg.yaml` config file for test publishing:
+```
+stac_config:
+  stac_client:
+    client_id:  
+    redirect_uri: 
+  token_storage_file: ~/.esgf-publisher.json 
+  stac_transaction_api:
+    client_id: 
+    access_control_policy: https://esgf2.s3.amazonaws.com/access_control_policy.json
+    scope_string:  
+    base_url: 
+  stac_api: 
+```
 2. Publish a test dataset and confirm that it appears properly in the staging environment. If not, consult ______ for assistance.
 3. Configure publisher for the ESGF production environment.
-  * West Production: (STAC API URL, Metagrid URL)
+  * West Production: (STAC API URLs)
+    - Add the following to your `esg.yaml` config file for production publishing:
+```
+stac_config:
+  stac_client:
+    client_id:  
+    redirect_uri: 
+  token_storage_file: ~/.esgf-publisher.json 
+  stac_transaction_api:
+    client_id: 
+    access_control_policy: https://esgf2.s3.amazonaws.com/access_control_policy.json
+    scope_string:  
+    base_url: 
+  stac_api: 
+``` 
 4. Now, you can run the ESGF Publisher application to publish datasets to the ESGF project.
