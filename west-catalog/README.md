@@ -17,28 +17,35 @@ The following requirements must be met in order for individuals at your institut
 ## ESGF Project Confirmation
 Before proceeding, confirm that there’s a collection in the ESGF STAC catalog for the project to which you’re contributing.
 
-* Look for your project’s collection here: [West STAC API URL; Metagrid URL]
+* Look for your project’s collection here: 
+  * [West STAC API](https://discovery.west.esgf.io)
+  * [Metagrid](https://metagrid.esgf-west.org)
 
 ***If the project your institution needs to contribute to already has a collection in the ESGF STAC catalog, skip to the next section.***
 
-If your project is not present:
-  - If you are coordinating with the WCRP, please reach out to the WIP (infrastructure panel) co-chairs (link at IPO site).
-  - If this project is not affiliated with WCRP research, please reach out to the ESGF-XC via _______ .
+Before you can publish to a new ESGF project, you must first register the project’s schema. When esgf-vocab is populated with your project schema, the project’s collection should appear automatically in the ESGF STAC catalogs.
+
+* If you are coordinating with the WCRP, please reach out to the WIP (infrastructure panel) co-chairs (link at IPO site).
+* If this project is not affiliated with WCRP research, please reach out to the ESGF-XC.
+
+After you’ve worked with the appropriate group to add your project’s schema to esgf-vocab, watch the collection endpoint (see links above) for your collection to appear. If it doesn’t appear automatically within two business days, open an issue in the [esgf-vocab repository](https://github.com/ESGF/esgf-vocab) for assistance.
 
 ## Register an Institution
 ***If your institution has published to ESGF-NG before (presumably with a different ESGF project), skip to the next section.***
 
 Before individuals at your institution can publish to ESGF projects, you must first register your institution with ESGF-NG.
 
-E-mail the appropriate address below and share the institution name (CMIP institution_id), and the ID(s) of the individuals who will add/remove other members of your team.
-For the West STAC catalog, email:  _________
+Use the following Google form to share the institution name (CMIP) institution_id, and the ID(s) of the individuals who will add/remove other members of your team.
+For the West STAC catalog, please use the [ESGF-NG Onboarding form](https://docs.google.com/forms/d/e/1FAIpQLSfB8PriU--KLeiIlc1WvRaHNCXqrYwUIFh2SADMuWskcL-DFA/viewform?usp=header)
 
 Wait for your institution’s group to be created. When your group is created…
 1. Add members at your institution
 2. Review membership regularly & remove members
 
 ## Publish to an ESGF Project
-To obtain permission for individuals at your institution to publish to a project’s collection on one of ESGF’s two catalogs, email ______________ and ask for your CMIP institution_id to be permitted to publish to the project’s collection.
+Use the form above to request publication permissions for users at your institution.
+
+The form includes a question about publication/write access. Before datasets can be published to a project collection and indexed in ESGF, the associated CMIP institution_id must be granted permission to publish to that collection.
 
 When your institution has been granted permission to publish to the project’s collection…
 1. Configure publisher for the ESGF staging environment.
