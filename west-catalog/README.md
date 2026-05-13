@@ -81,4 +81,5 @@ stac_config:
     base_url: 
   stac_api: 
 ``` 
-4. Now, you can run the ESGF Publisher application to publish datasets to the ESGF project.
+4. Upgrade your publisher to the most recent version: `esg install --upgrade esgcet`
+5. Now, you can run the ESGF Publisher application to publish datasets to the ESGF project.  For more information see the https://esg-publisher.readthedocs.org/ site.
