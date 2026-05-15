@@ -64,7 +64,7 @@ stac_config:
     base_url: https://transaction.integration.west.esgf.io
   stac_api: https://discovery.integration.west.esgf.io
 ```
-2. Publish a test dataset and confirm that it appears properly in the staging environment. If not, consult ______ for assistance.
+2. Publish a test dataset and confirm that it appears properly in the staging environment. If not, consult [esgf-user@llnl.gov](mailto:esgf-user@llnl.gov) for assistance.
 3. Configure publisher for the ESGF production environment.
   * West Production: (STAC API URLs)
     - Add the following to your `esg.yaml` config file for production publishing:
