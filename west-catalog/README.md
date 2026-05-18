@@ -61,8 +61,8 @@ stac_config:
     client_id: 7467bc71-1417-43f0-a7a9-a26c45757c36
     access_control_policy: https://esgf2.s3.amazonaws.com/access_control_policy.json
     scope_string: https://auth.globus.org/scopes/7467bc71-1417-43f0-a7a9-a26c45757c36/transaction
-    base_url: https://transaction.integration.west.esgf.io
-  stac_api: https://discovery.integration.west.esgf.io
+    base_url: https://transaction-int.west.esgf.io
+  stac_api: https://discovery-int.west.esgf.io
 ```
 2. Publish a test dataset and confirm that it appears properly in the staging environment. If not, consult [esgf-user@llnl.gov](mailto:esgf-user@llnl.gov) for assistance.
 3. Configure publisher for the ESGF production environment.
