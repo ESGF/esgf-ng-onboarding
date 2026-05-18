@@ -28,7 +28,7 @@ Before you can publish to a new ESGF project, you must first register the projec
 * If you are coordinating with the WCRP, please reach out to the WIP (infrastructure panel) co-chairs (link at IPO site).
 * If this project is not affiliated with WCRP research, please reach out to the ESGF-XC.
 
-After you’ve worked with the appropriate group to add your project’s schema to esgf-vocab, watch the collection endpoint (see links above) for your collection to appear. If it doesn’t appear automatically within two business days, open an issue in the [esgf-vocab repository](https://github.com/ESGF/esgf-vocab) for assistance.
+After you’ve received confirmation from the appropriate group, you will develop a Controlled Vocabulary (CV) for your project that will be managed via [esgf-vocab](esgf.github.io/esgf-vocab) (the `esgvoc` package).   We recommend you verify the CVs using the software.  Once complete, the corresponding STAC catalog should populate in the West Discovery API.
 
 ## Register an Institution
 ***If your institution has published to ESGF-NG before (presumably with a different ESGF project), skip to the next section.***
