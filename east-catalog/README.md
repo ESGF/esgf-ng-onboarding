@@ -30,7 +30,7 @@ After you’ve worked with the esgf-vocab team to add your project’s schema to
 Before data at a node can be published it must first be registered with ESGF-NG.
 
 E-mail the appropriate address below and share the node's address (e.g. ceda.ac.uk).
-For the East STAC catalog, email:  _________
+For the East STAC catalog, email: <support@ceda.ac.uk>
 
 Wait for your node's group to be created.
 
@@ -38,7 +38,7 @@ Wait for your node's group to be created.
 ***If your institution wishes to manage their users' permissions for projects and/or nodes, they must first register their institution with ESGF-NG.***
 
 E-mail the appropriate address below and share the institution name (CMIP institution_id), the projects and nodes they would like to manage, and the email(s) of the individuals who will add/remove other members of your team.
-For the West STAC catalog, email:  _________
+For the East STAC catalog, email:  <support@ceda.ac.uk>
 
 Wait for your institution’s group to be created. When your group is created…
 1. Add members at your institution
@@ -58,8 +58,8 @@ If your institution is not registered, you can apply directly for the project or
 
 When you've has been granted permission to publish to the relevant projects and nodes…
 1. Configure publisher for the ESGF staging environment.
-  * East Staging/testing: (STAC API URL, Metagrid URL)
-2. Publish a test dataset and confirm that it appears properly in the staging environment. If not, consult ______ for assistance.
+  * East Staging/testing: (<https://transaction-int.east.esgf.io>, <https://esgf-ui.ceda.ac.uk>)
+2. Publish a test dataset and confirm that it appears properly in the staging environment. If not, consult <support@ceda.ac.uk> for assistance.
 3. Configure publisher for the ESGF production environment.
-  * East Production: (STAC API URL, Metagrid URL)
+  * East Production: (<https://transaction.east.esgf.io>, <https://esgf-ui.ceda.ac.uk>)
 4. Now, you can run the ESGF Publisher application to publish datasets to the ESGF project.
