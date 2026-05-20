@@ -17,7 +17,7 @@ The following requirements must be met in order for individuals at your institut
 ## ESGF Project Confirmation
 Before proceeding, confirm that there’s a collection in the ESGF STAC catalog for the project to which you’re contributing.
 
-* Look for your project’s collection here: 
+* Look for your project’s collection here:
   * [West STAC API](https://discovery.west.esgf.io)
   * [Metagrid](https://metagrid.esgf-west.org)
 
@@ -39,7 +39,7 @@ Use the following Google form to share the institution name (CMIP) institution_i
 For the West STAC catalog, please use the [ESGF-NG Onboarding form](https://docs.google.com/forms/d/e/1FAIpQLSfB8PriU--KLeiIlc1WvRaHNCXqrYwUIFh2SADMuWskcL-DFA/viewform?usp=header)
 
 Wait for your institution’s group to be created. When your group is created…
-1. Add members at your institution
+1. [Add members at your institution](manage-group-membership.md)
 2. Review membership regularly & remove members
 
 ## Publish to an ESGF Project
@@ -56,7 +56,7 @@ stac_config:
   stac_client:
     client_id: a34e738b-efa7-49b0-bc11-c74e6c6ec011
     redirect_uri: https://auth.globus.org/v2/web/auth-code
-  token_storage_file: ~/.esgf-publisher.json 
+  token_storage_file: ~/.esgf-publisher.json
   stac_transaction_api:
     client_id: 7467bc71-1417-43f0-a7a9-a26c45757c36
     access_control_policy: https://esgf2.s3.amazonaws.com/access_control_policy.json
@@ -73,13 +73,13 @@ stac_config:
   stac_client:
     client_id: 40ef1be1-5d35-4a69-a571-8ca8bec8f211
     redirect_uri: https://auth.globus.org/v2/web/auth-code
-  token_storage_file: ~/.esgf-publisher.json 
+  token_storage_file: ~/.esgf-publisher.json
   stac_transaction_api:
     client_id: 66ae998e-9e67-4eea-bf9d-7d0e1eb0946f
     access_control_policy: https://esgf2.s3.amazonaws.com/access_control_policy.json
     scope_string: https://auth.globus.org/scopes/66ae998e-9e67-4eea-bf9d-7d0e1eb0946f/transaction
     base_url: https://transaction.west.esgf.io
   stac_api: https://discovery.west.esgf.io
-``` 
+```
 4. Upgrade your publisher to the most recent version: `pip install --upgrade esgcet`
 5. Now, you can run the ESGF Publisher application to publish datasets to the ESGF project.  For more information see the https://esg-publisher.readthedocs.org/ site.
