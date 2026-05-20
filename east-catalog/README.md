@@ -1,4 +1,4 @@
-# Onboarding to the ESGF-NG West Catalog
+# Onboarding to the ESGF-NG East Catalog
 
 The ESGF-NG East STAC catalog is operated in the United Kingdom by the CEDA (Center for Environmental Data Analysis). It is one of (currently) two ESGF STAC catalogs ("East" and "West"). All ESGF STAC catalogs are synchronized: changes made in one are automatically reflected in the other(s).
 
