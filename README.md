@@ -15,5 +15,5 @@ The choice of which catalog to use for making updates is principally a choice be
 
 Onboarding to ESGF-NG happens at the institutional level. We onboard institutions, not individuals. Each ESGF-NG catalog has its own onboarding process. The processes are very similar, but each has distinct points of contact and specific instructions.
 
-* If your institution prefers to use Globus for ESGF data publication, follow the [instructions for onboarding to the ESGF West catalog]((west-catalog/README.md)).
+* If your institution prefers to use Globus for ESGF data publication, follow the [instructions for onboarding to the ESGF West catalog](west-catalog/README.md).
 * If your institution prefers to use EGI Check-in for ESGF data publication, follow the [instructions for onboarding to the ESGF East catalog](east-catalog/README.md).
