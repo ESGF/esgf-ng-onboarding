@@ -17,15 +17,6 @@ The following requirements must be met in order to publish (or update) items in 
 3. **Optional:** your institution maybe registered with ESGF-NG East which will allow administrators to manage authorised individuals to your institution.
 4. Either the ESGF East operations team or your institution administrators must *authorise* you to publish to the relevant project and node.
 
-## Register an ESGF Project
-Before proceeding, confirm that there’s a collection in the ESGF STAC catalog for the project to which you’re contributing.
-
-* Look for your project’s collection here: [East STAC API URL; Metagrid URL]
-
-Before you can publish to a new ESGF project, you must first register the project’s schema with the esgf-vocab project. When esgf-vocab is populated with your project schema, the project’s collection should appear automatically in the ESGF STAC catalogs.
-
-After you’ve worked with the esgf-vocab team to add your project’s schema to esgf-vocab, watch the collection endpoint (see links above) for your collection to appear. If it doesn’t appear automatically within two business days, email _______ for assistance.
-
 ## Register a data node
 ***If the data node you are publishing on behalf of has had data published to ESGF-NG before, skip to the next section.***
 
