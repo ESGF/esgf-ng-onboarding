@@ -1,5 +1,7 @@
 # Onboarding to the ESGF-NG East Catalog
 
+**Note: Currently ESGF East's EGI Check-In auth only supports 8 hour tokens, for long running publication tasks please use the [ESGF-NG West Catalog](west-catalog/README.md)**
+
 The ESGF-NG East STAC catalog is operated in the United Kingdom by the CEDA (Center for Environmental Data Analysis). It is one of (currently) two ESGF STAC catalogs ("East" and "West"). All ESGF STAC catalogs are synchronized: changes made in one are automatically reflected in the other(s).
 
 This document explains how to obtain permission to publish and update items using ESGF-NG East.
