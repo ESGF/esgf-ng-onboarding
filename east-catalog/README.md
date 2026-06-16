@@ -52,7 +52,30 @@ If your institution is not registered, you can apply directly for the project or
 When you've has been granted permission to publish to the relevant projects and nodes…
 1. Configure publisher for the ESGF staging environment.
   * East Staging/testing: (<https://transaction-int.east.esgf.io>, <https://esgf-ui.ceda.ac.uk>)
+    - Add the following to your `esg.yaml` config file for test publishing:
+```
+stac_config:
+  token_storage_file: ~/.esgf-publisher.json
+  stac_transaction_api:
+    client_id: 3da9c21e-2bb9-4576-9054-af420514cb7b
+    device_endpoint: https://aai.egi.eu/auth/realms/egi/protocol/openid-connect/auth/device
+    token_endpoint: https://aai.egi.eu/auth/realms/egi/protocol/openid-connect/token
+    base_url: https://transaction-int.east.esgf.io
+  stac_api: https://discovery-int.east.esgf.io
+```
 2. Publish a test dataset and confirm that it appears properly in the staging environment. If not, consult <support@ceda.ac.uk> for assistance.
 3. Configure publisher for the ESGF production environment.
   * East Production: (<https://transaction.east.esgf.io>, <https://esgf-ui.ceda.ac.uk>)
-4. Now, you can run the ESGF Publisher application to publish datasets to the ESGF project.
+    - Add the following to your `esg.yaml` config file for test publishing:
+```
+stac_config:
+  token_storage_file: ~/.esgf-publisher.json
+  stac_transaction_api:
+    client_id: 3da9c21e-2bb9-4576-9054-af420514cb7b
+    device_endpoint: https://aai.egi.eu/auth/realms/egi/protocol/openid-connect/auth/device
+    token_endpoint: https://aai.egi.eu/auth/realms/egi/protocol/openid-connect/token
+    base_url: https://transaction.east.esgf.io
+  stac_api: https://discovery.east.esgf.io
+```
+4. Upgrade your publisher to the most recent version: `pip install --upgrade esgcet`
+5. Now, you can run the ESGF Publisher application to publish datasets to the ESGF project.
