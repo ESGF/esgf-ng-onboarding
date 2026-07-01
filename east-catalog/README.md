@@ -1,7 +1,5 @@
 # Onboarding to the ESGF-NG East Catalog
 
-**Note: Currently ESGF East's EGI Check-In auth only supports 8 hour tokens, for long running publication tasks please use the [ESGF-NG West Catalog](west-catalog/README.md)**
-
 The ESGF-NG East STAC catalog is operated in the United Kingdom by the CEDA (Center for Environmental Data Analysis). It is one of (currently) two ESGF STAC catalogs ("East" and "West"). All ESGF STAC catalogs are synchronized: changes made in one are automatically reflected in the other(s).
 
 This document explains how to obtain permission to publish and update items using ESGF-NG East.
@@ -79,3 +77,18 @@ stac_config:
 ```
 4. Upgrade your publisher to the most recent version: `pip install --upgrade esgcet`
 5. Now, you can run the ESGF Publisher application to publish datasets to the ESGF project.
+
+## Long running Publication to an ESGF East
+ESGF East's EGI Check-in authentication requires publishers to re-authenticate once per month. This period can be extended to up to one year by using a confidential client.
+
+If your data node cannot support monthly re-authentication, you can request a confidential client by following the steps below:
+
+> **Note:** Confidential clients must **not** be shared between multiple users. If either the `client_id` or `client_secret` is exposed or suspected to be compromised, this must be reported to <support@ceda.ac.uk> without delay so that the credentials can be rotated.
+
+1. Email you request to: <support@ceda.ac.uk>. 
+Please include:
+   - The data node you are associated with.
+   - The email address of the designated user of the confidential client.
+   - The reason a long-lived client is required.
+
+2. Once you have received your confidential `client_id` and `client_secret`, follow the steps in [Publish to an ESGF Project](#Publish-to-an-ESGF-Project). Include the `client_id` and `client_secret` in the `stac_config.stac_transaction_api` configuration section.
