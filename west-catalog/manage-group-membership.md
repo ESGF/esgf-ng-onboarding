@@ -31,3 +31,5 @@ Click the name of the person you wish to invite, then follow Globus's prompts to
 If name search does not find the person you wish to invite, you can type their email address into the search box instead. They will receive an email invitation, and can follow Globus's prompts to sign into Globus and accept the invitation.
 
 To remove a member from your group, click the member's name in the Members view, then click the "Remove Membership" button on the member details view.
+
+> **Note:** Membership changes are not instant. The transaction API caches authorization for up to 5 minutes and reads only *active* memberships, so newly added publishers may need a fresh login and a few minutes before they can publish, and removed members lose access after the cache expires.

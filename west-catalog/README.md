@@ -11,8 +11,20 @@ Catalog onboarding happens at the *institution* and *ESGF project* levels. We on
 The following requirements must be met in order for individuals at your institution to publish (or update) items in an ESGF project in the West ESGF-NG catalog. The remainder of this document explains how to satisfy these requirements and how to begin publishing once they’re satisfied.
 
 1. The ESGF project must have a *collection* in the ESGF-NG catalog.
-2. Your institution’s ESGF team must have an *ESGF Globus group* and you must add authorized individuals to your team’s group.
-3. The ESGF West operations team must *authorize* your team’s group to publish to the ESGF project’s collection.
+2. Your institution’s ESGF team must have an *ESGF Globus group*, and you must add authorized publishers to it.
+3. Your **data node** must be registered and bound to your Globus group in the access control policy.
+4. The ESGF West operations team must *authorize* your group to publish to the relevant project(s) and node.
+
+## How authorization works
+
+Publishing is authorized by **Globus group membership**. Operators add entries to the access control policy that bind your node and project to your group's UUID, one per role, e.g.:
+
+```txt
+node:<NODE_ID>:role=CREATE:group:<YOUR_GLOBUS_GROUP_UUID>
+project:<PROJECT_ID>:role=CREATE:group:<YOUR_GLOBUS_GROUP_UUID>
+```
+
+Roles are `CREATE`, `UPDATE`, `DELETE`, `REPLICATE`, and `REVOKE`. A publish request is allowed only if a user is an **active member** of a group granted the needed role on **both** the item's project and node. So to publish, a user simply needs to be in your group. Removing them from the group revokes access.
 
 ## Register an Institution
 ***If your institution has published to ESGF-NG before (presumably with a different ESGF project), skip to the next section.***
@@ -25,6 +37,11 @@ For the West STAC catalog, please use the [ESGF-NG Onboarding form](https://docs
 Wait for your institution’s group to be created. When your group is created…
 1. [Add members at your institution](manage-group-membership.md)
 2. Review membership regularly & remove members
+
+## Register Your Data Node
+***If your institution has already published from this node, skip to the next section.***
+
+Your node must be bound to your Globus group before you can publish from it. Using the [ESGF-NG Onboarding form](https://docs.google.com/forms/d/e/1FAIpQLSfB8PriU--KLeiIlc1WvRaHNCXqrYwUIFh2SADMuWskcL-DFA/viewform?usp=header), provide your node address (e.g. `esgf-node.llnl.gov`). Operators create your institution's Globus group and add the node/project entries to the access control policy for you. You do not need to create the group.
 
 ## Publish to an ESGF Project
 Use the form above to request publication permissions for users at your institution.
