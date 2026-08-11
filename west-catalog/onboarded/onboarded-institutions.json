@@ -1,0 +1,103 @@
+{
+  "catalog": "west",
+  "institutions": [
+    {
+      "institution": "Institute of Atmospheric Physics, Chinese Academy of Sciences (CAS)",
+      "institution_id": "CAS",
+      "data_node": "esg.iap.ac.cn",
+      "projects": [
+        "CMIP7"
+      ],
+      "status": "production",
+      "created": "2026-07-30",
+      "updated": "2026-07-30"
+    },
+    {
+      "institution": "Canadian Centre for Climate Modelling and Analysis (CCCma)",
+      "institution_id": "CCCma",
+      "data_node": "crd-esgf-drc.ec.gc.ca",
+      "projects": [
+        "CMIP7",
+        "CORDEX-CMIP6",
+        "CMIP6Plus"
+      ],
+      "status": "production",
+      "created": "2026-07-30",
+      "updated": "2026-07-30"
+    },
+    {
+      "institution": "DKRZ (CLMcom-BTU)",
+      "institution_id": "CLMcom-BTU",
+      "data_node": "esgf1.dkrz.de",
+      "projects": [
+        "CORDEX-CMIP6"
+      ],
+      "status": "production",
+      "created": "2026-07-30",
+      "updated": "2026-07-30"
+    },
+    {
+      "institution": "National Computational Infrastructure Australia",
+      "institution_id": "CSIRO",
+      "data_node": "esgf.nci.org.au",
+      "projects": [
+        "CMIP6",
+        "CMIP6Plus",
+        "CORDEX-CMIP6",
+        "CMIP7"
+      ],
+      "status": "production",
+      "created": "2026-07-30",
+      "updated": "2026-07-30"
+    },
+    {
+      "institution": "Oak Ridge National Laboratory",
+      "institution_id": "E3SM-Project",
+      "data_node": "esgf-node.ornl.gov",
+      "projects": [
+        "CMIP6",
+        "CMIP6Plus",
+        "CMIP7"
+      ],
+      "status": "production",
+      "created": "2026-07-30",
+      "updated": "2026-07-30"
+    },
+    {
+      "institution": "Geophysical Fluid Dynamics Laboratory (NOAA-GFDL)",
+      "institution_id": "NOAA-GFDL",
+      "data_node": "esgdata.gfdl.noaa.gov",
+      "projects": [
+        "CMIP7",
+        "CMIP6Plus"
+      ],
+      "status": "production",
+      "created": "2026-07-30",
+      "updated": "2026-07-30"
+    },
+    {
+      "institution": "Ouranos Inc",
+      "institution_id": "OURANOS",
+      "data_node": "esgf.ouranos.ca",
+      "projects": [
+        "CORDEX-CMIP6"
+      ],
+      "status": "production",
+      "created": "2026-07-30",
+      "updated": "2026-07-30"
+    },
+    {
+      "institution": "NERSC",
+      "institution_id": "PCMDI",
+      "data_node": "esgf-node.nersc.gov",
+      "projects": [
+        "CMIP6",
+        "CMIP6Plus",
+        "CMIP7"
+      ],
+      "status": "production",
+      "created": "2026-07-30",
+      "updated": "2026-07-30"
+    }
+  ]
+}
