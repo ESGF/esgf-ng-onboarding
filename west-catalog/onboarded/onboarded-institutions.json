@@ -10,7 +10,7 @@
       ],
       "status": "production",
       "created": "2026-07-30",
-      "updated": "2026-07-30"
+      "updated": "2026-09-29"
     },
     {
       "institution": "Canadian Centre for Climate Modelling and Analysis (CCCma)",
@@ -64,6 +64,17 @@
       "updated": "2026-07-30"
     },
     {
+      "institution": "Korea Institute of Ocean Science and Technology",
+      "institution_id": "KIOST",
+      "data_node": "esgf-node.kiost.ac.kr",
+      "projects": [
+        "CMIP7"
+      ],
+      "status": "production",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
       "institution": "Geophysical Fluid Dynamics Laboratory (NOAA-GFDL)",
       "institution_id": "NOAA-GFDL",
       "data_node": "esgdata.gfdl.noaa.gov",
@@ -98,6 +109,17 @@
       "status": "production",
       "created": "2026-07-30",
       "updated": "2026-07-30"
+    },
+    {
+      "institution": "LIU (SMHI)",
+      "institution_id": "SMHI",
+      "data_node": "esg-dn1.nsc.liu.se",
+      "projects": [
+        "CMIP7"
+      ],
+      "status": "production",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
     }
   ]
 }
